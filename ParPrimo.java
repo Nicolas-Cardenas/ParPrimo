@@ -16,7 +16,7 @@ public class Main {
 
 		if(o ==1)
 		{
-			System.out.println("¿Qué numero desea saber si es primo o no?");
+			System.out.println("Que numero desea saber si es primo o no?");
 			int pri = Integer.parseInt(myInput.nextLine());
 			int contador = 2;
 			boolean primo=true;
@@ -39,7 +39,7 @@ public class Main {
 		}
 		else if(o==2)
 		{
-			System.out.println("¿Qué numero desea saber si es par o no?");
+			System.out.println("Que numero desea saber si es par o no?");
 			int par = Integer.parseInt(myInput.nextLine());
 			if(par%2==0)
 			{
