@@ -1,6 +1,13 @@
 # Imagen base para java
-FROM openjdk:lastest
+FROM openjdk:8
+
 COPY . .
-RUN ["javac", "ParPrimo.java"]
-ENTRYPOINT ["java", "ParPrimo"]
+
+ENV numuno=1 \
+    numdos=5
+
+
+RUN ["javac", "ParPrimoEnv.java"]
+
+ENTRYPOINT ["java", "ParPrimoEnv"]
 
